@@ -1,0 +1,87 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html>
+<title>scrollbar-gutter demo</title>
+<head>
+    <style>
+        /* CSS */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #000;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #fff;
+        }
+
+        /* This is the property you're looking for */
+        ::-webkit-scrollbar {
+            scrollbar-gutter: stable both-edges;
+        }
+
+        /* This will trigger a scrollbar */
+        .scrollable {
+            height: 200px;
+            overflow-y: scroll;
+            max-width: 600px;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+            euismod sapien, vel bibendum sapien. Sed vel nunc vel lorem bibendum
+            bibendum. Sed vel nunc vel lorem bibendum bibendum. Sed vel nunc vel
+            lorem bibendum bibendum. Sed vel nunc vel lorem bibendum bibendum.
+            Sed vel nunc vel lorem bibendum bibendum. Sed vel nunc vel lorem
+            bibendum bibendum. Sed vel nunc vel lorem bibendum bibendum. Sed
+            vel nunc vel lorem bibendum bibendum. Sed vel nunc vel lorem bibendum
+            bibendum. Sed vel nunc vel lorem bibendum bibendum. Sed vel nunc
+            vel lorem bibendum bibendum. Sed vel nunc vel lorem bibendum
+            bibendum. Sed vel nunc vel lorem bibendum bibendum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+            euismod sapien, vel bibendum sapien. Sed vel nunc vel lorem bibendum
+            bibendum. Sed vel nunc vel lorem bibendum bibendum. Sed vel nunc vel
+            lorem bibendum bibendum. Sed vel nunc vel lorem bibendum bibendum.
+            Sed vel nunc vel lorem bibendum bibendum. Sed vel nunc vel lorem
+            bibendum bibendum. Sed vel nunc vel lorem bibendum bibendum. Sed
+            vel nunc vel lorem bibendum bibendum. Sed vel nunc vel lorem bibendum
+            bibendum. Sed vel nunc vel lorem bibendum bibendum. Sed vel nunc
+            vel lorem bibendum bibendum. Sed vel nunc vel lorem bibendum
+            bibendum. Sed vel nunc vel lorem bibendum bibendum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+            euismod sapien, vel bibendum sapien. Sed vel nunc vel lorem bibendum
+            bibendum. Sed vel nunc vel lorem bibendum bibendum. Sed vel nunc vel
+            lorem bibendum bibendum. Sed vel nunc vel lorem bibendum bibendum.
+            Sed vel nunc vel lorem bibendum bibendum. Sed vel nunc vel lorem
+            bibendum bibendum. Sed vel nunc vel lorem bibendum bibendum. Sed
+            vel nunc vel lorem bibendum bibendum. Sed vel nunc vel lorem bibendum
+            bibendum. Sed vel nunc vel lorem bibendum bibendum. Sed vel nunc
+            vel lorem bibendum bibendum. Sed vel nunc vel lorem bibendum
+            bibendum. Sed vel nunc vel lorem bibendum bibendum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+            euismod sapien, vel bibendum sapien. Sed vel nunc vel lorem bibendum
+            bibendum. Sed vel nunc vel lorem bibendum bibendum. Sed vel nunc vel
+            lorem bibendum bibendum. Sed vel nunc vel lorem bibendum bibendum.
+            Sed vel nunc vel lorem bibendum bibendum. Sed vel nunc vel lorem
+            bibendum bibendum. Sed vel nunc vel lorem bibendum bibendum. Sed
+            vel nunc vel lorem bibendum bibendum. Sed vel nunc vel lorem bibendum
+            bibendum. Sed vel nunc vel lorem bibendum bibendum. Sed vel nunc
+            vel lorem bibendum bibendum. Sed vel nunc vel lorem bibendum
+            bibendum. Sed vel nunc vel lorem bibendum bibendum.
+        </p>
+    </div>
+</body>
+</html>
