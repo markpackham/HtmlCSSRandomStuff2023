@@ -16,12 +16,14 @@
     </style>
 </head>
 <body>
+    <h1>Anchor in CSS is very experimental and intended for early access Chrome Canary</h1>
     <form>
         <div>
             <div class="label-container">
                 <label for="confusing">Confusing Field</label>
-                <button popovertarget="info" type="button" id="btn" class="information">i</button>
-                <div id="info" popover anchor="btn">Extra</div>
+                <button popovertarget="toggle" popovertargetaction="show" type="button" id="btn"
+                    class="information">i</button>
+                <div id="info" popover="manual" anchor="btn">Extra</div>
             </div>
             <input type="text" id="confusing">
         </div>
