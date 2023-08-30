@@ -1,0 +1,30 @@
+.information {
+    all: unset;
+    background: #00aaff;
+    color: white;
+    border-radius: 9999px;
+    font-size: 0.5rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.information:hover {
+    background: #0088ff;
+}
+
+.label-container {
+    display: flex;
+    gap: 0.25rem;
+}
+
+form {
+    margin-top: 15vh;
+}
+
+body {
+    height: 150vh;
+}

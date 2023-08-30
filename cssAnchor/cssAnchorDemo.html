@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Anchor Demo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        [popover] {
+            inset: unset;
+        }
+    </style>
 </head>
 <body>
-    <form action="">
+    <form>
         <div>
             <div class="label-container">
                 <label for="confusing">Confusing Field</label>
-                <buttton type="button" class="information">i</buttton>
-                <!-- <div>Extra</div> -->
+                <button popovertarget="info" type="button" id="btn" class="information">i</button>
+                <div id="info" popover anchor="btn">Extra</div>
             </div>
             <input type="text" id="confusing">
         </div>
