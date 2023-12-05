@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Using inbuilt html <a target="_blank"
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern">pattern</a> using regex for
+        validation. JS free form validation learnt from <a target="_blank"
+            href="https://www.youtube.com/watch?v=wC47xeubZhk">here</a>.
+    </p>
+    <p>Obviously true validation has to happen at the backend so people don't just Inspect Element then enter poison.
+    </p>
+
+    <dialog id="sample-dialog">
+    </dialog>
+
+    <form id="sample-form">
+        <label>
+            <span>First Name</span>
+            <!-- Make sure no numbers entered in names-->
+            <input type="text" name="first_name" pattern="^[^\d]*$" required
+                title="Your name cannot contain any numbers" />
+        </label>
+        <label>
+            <span>Last Name</span>
+            <input type="text" name="last_name" pattern="^[^\d]*$" required
+                title="Your name cannot contain any numbers" />
+        </label>
+        <label>
+            <span>Phone Number (eg 555-555-5555)</span>
+            <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone_number" required
+                title="Your format must match 555-555-5555" />
+        </label>
+        <label>
+            <span>Zip Code (Americans just use numbers)</span>
+            <input type="number" name="zip_code" pattern="[0-9]{5}" required />
+        </label>
+        <label data-span>
+            <span>Email Address</span>
+            <input type="email" name="email_address" required />
+        </label>
+        <button type="submit">Submit Form</button>
+    </form>
+</body>
+</html>

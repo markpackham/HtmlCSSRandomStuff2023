@@ -1,0 +1,47 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+form {
+    display: grid;
+    gap: var(--size-4);
+    padding: var(--size-fluid-3);
+    border: var(--border-size-2) solid var(--surface-2);
+}
+
+label {
+    display: grid;
+    gap: var(--size-2);
+}
+
+@media only screen and (min-width: 460px) {
+    [data-span] {
+        grid-column: span 2;
+    }
+}
+
+button {
+    background-color: var(--surface-4);
+    padding: var(--size-2) var(--size-fluid-1);
+    font-weight: bold;
+    border-radius: var(--radius-2);
+}
+
+::backdrop {
+    opacity: 0.4;
+}
+
+dialog[open] {
+    display: grid;
+    gap: var(--size-3);
+    padding: var(--size-fluid-2) var(--size-fluid-3);
+
+    & button {
+        margin-block-start: var(--size-3);
+    }
+}
